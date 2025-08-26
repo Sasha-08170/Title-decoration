@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title-decoration</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Box-decoration</title>
-</head>
+  <body>
+    <div class="page">
+      <!-- Текст с box-decoration -->
+      <div class="box">
+        <h1 class="box__title">
+          <span class="box__text box__text--clone box__text--gradient-purple-pink">
+            Заголовок
+          </span>
+        </h1>
+      </div>
 
-<body>
-  <div class="page">
-    <!-- Текст с box-decoration -->
-    <div class="box">
-      <h1 class="box__title">
-        <span class="box__text box__text--clone box__text--gradient-purple-pink">
-          Привет, мир!
-        </span>
-      </h1>
+      <div class="box">
+        <h1 class="box__title">
+          <span class="box__text box__text--clone box__text--gradient-green-blue"> Заголовок </span>
+        </h1>
+      </div>
+
+      <!-- Заголовки с подчёркиванием -->
+      <div class="box">
+        <h2 class="box__title box__title--underline box__title--underline-purple-pink">
+          Заголовок
+        </h2>
+      </div>
+
+      <div class="box">
+        <h2 class="box__title box__title--underline box__title--underline-green-blue">Заголовок</h2>
+      </div>
+
+      <div class="box">
+        <h2 class="box__title box__title--underline box__title--underline-orange-red">Заголовок</h2>
+      </div>
+
+      <!-- Заголовки с анимированным подчёркиванием -->
+      <div class="box">
+        <h2
+          class="box__title box__title--underline-animated box__title--underline-animated-purple-pink"
+        >
+          Заголовок
+        </h2>
+      </div>
+
+      <div class="box">
+        <h2
+          class="box__title box__title--underline-animated box__title--underline-animated-green-blue"
+        >
+          Заголовок
+        </h2>
+      </div>
     </div>
-
-    <div class="box">
-      <h1 class="box__title">
-        <span class="box__text box__text--clone box__text--gradient-green-blue">
-          Hello, world!
-        </span>
-      </h1>
-    </div>
-
-    <!-- Заголовки с подчёркиванием -->
-    <div class="box">
-      <h2 class="box__title box__title--underline box__title--underline-purple-pink">
-        Заголовок с фиолетово-розовым подчёркиванием
-      </h2>
-    </div>
-
-    <div class="box">
-      <h2 class="box__title box__title--underline box__title--underline-green-blue">
-        Заголовок с зелёно-синим подчёркиванием
-      </h2>
-    </div>
-
-    <div class="box">
-      <h2 class="box__title box__title--underline box__title--underline-orange-red">
-        Заголовок с оранжево-красным подчёркиванием
-      </h2>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>

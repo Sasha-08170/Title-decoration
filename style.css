@@ -18,6 +18,27 @@
   align-items: flex-start;
 }
 
+/* ===== Анимированное подчёркивание ===== */
+.box__title--underline-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.box__title--underline-animated::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  transition: width 0.4s ease;
+}
+
+.box__title--underline-animated:hover::before {
+  width: 100%;
+}
+
 /* Элемент заголовка */
 .box__title {
   max-width: 260px;
@@ -58,7 +79,7 @@
 }
 
 .box__title--underline::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -78,4 +99,38 @@
 
 .box__title--underline-orange-red::before {
   background: linear-gradient(to right, #f97316, #ef4444);
+}
+
+/* ===== Общая база для анимированного подчёркивания ===== */
+.box__title--underline-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.box__title--underline-animated::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+/* При наведении линия растягивается */
+.box__title--underline-animated:hover::before {
+  width: 100%;
+}
+
+/* ===== Цветовые варианты ===== */
+
+/* Фиолетово-розовый */
+.box__title--underline-animated-purple-pink::before {
+  background: linear-gradient(90deg, #8e2de2, #ff6a88);
+}
+
+/* Зелёно-синий */
+.box__title--underline-animated-green-blue::before {
+  background: linear-gradient(90deg, #11998e, #38ef7d);
 }
